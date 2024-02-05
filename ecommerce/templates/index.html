@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Django ecommerce</title>
+    </head>
+    <body>
+        {{title}}
+
+        {% for name in texts %}
+            {{name}}
+            {% if not forloop.last %}
+                
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
