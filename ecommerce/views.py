@@ -12,3 +12,20 @@ def index(request):
     }
     
     return render(request, 'index.html', contexts)
+
+def contact(request):
+    
+    return render(request, 'contact.html')
+
+def category(request):
+    
+    return render(request, 'category.html')
+
+
+def privacy(request):
+    
+    return render(request, 'privacy.html')
+
+def product(request):
+    
+    return render(request, 'product.html')

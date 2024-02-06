@@ -1,3 +1,144 @@
-body {
-    background-color: red;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color:#fff;
+}
+
+header h4 {
+    padding:40px;
+    margin-left:200px;
+}
+
+header ul {
+    margin:auto;
+    width:500px;
+    margin-top:-55px;
+}
+
+header li {
+    float:left;
+    margin-left: 30px;
+    list-style: none;
+}
+
+header li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/*******************************/
+/*Section*/
+
+section {
+    height: 447px;
+    font-family: arial;
+    width: 100%;
+    height: 680px;
+    margin:100px auto auto auto;
+   
+}
+
+
+section form{
+    width: 600px;
+    height: 700px;
+    margin:auto;
+    padding: 10px;
+}
+
+
+section h1 {
+
+}
+
+section h2 {
+
+}
+
+section button {
+    width: 500px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-family: arial;
+    margin-top:10px ;
+    margin-left: 70px;
+}
+
+/*******************************/
+/*Footer*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color:#fff;
+}
+
+footer ul{
+    width:500px;
+    margin-left:200px;
+}
+
+
+footer li{
+    float:left;
+    margin-left: 30px;
+    list-style: none;
+    padding:5px;
+    margin-top:40px;
+    
+}
+
+footer li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/*******************************/
+/*Página de conato*/
+
+section h1 {
+    font-size: 40px;
+    font-family: arial;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.form-contact {
+   
+}
+
+.form-contact label{
+   font-size: 23px;
+}
+
+
+.form-contact input {
+    width:500px;
+    height: 40px;
+    border-radius: 5px;
+    border:solid 1px #000;
+    margin:10px;
+}
+
+.form-contact textarea{
+   width: 500px;
+   height: 100px;
+   margin-left: 70px;
+   color: gray;
+   font-size: 21px;
+   padding: 5px;
+ }
+ 

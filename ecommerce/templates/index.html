@@ -1,17 +1,5 @@
-<html>
-    {% load static %}
-    <head>
-        <title>Django ecommerce</title>
-        <link rel='stylesheet' href={% static '/style.css' %}>
-    </head>
-    <body>
-        {{title}}
+{% extends 'base.html' %}
 
-        {% for name in texts %}
-            {{name}}
-            {% if not forloop.last %}
-                
-            {% endif %}
-        {% endfor %}
-    </body>
-</html>
+{% block title%}
+    Inicio
+{% endblock %}

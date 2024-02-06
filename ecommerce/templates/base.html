@@ -1,0 +1,41 @@
+<html>
+    {% load static %}
+    <head>
+        <title>{% block title%}Base html{% endblock %}</title>
+        <link rel='stylesheet' href={% static '/style.css' %}>
+    </head>
+    <body>
+        <header>
+            <h4>Django E-commerce</h4>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/category">Categoriaria</a></li>
+                <li><a href="/contact">Contato</a></li>
+            </ul>
+        </header>
+        <section> 
+            <h1> 
+            {% block container %}
+                Django E-commerce                    
+            {% endblock %}
+            </h1>                    
+        </section>
+        <footer>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/product">produto</a></li>
+                <li><a href="/contact">Contato</a></li>
+                <li><a href="/privacy">privacidade</a></li>
+            </ul>
+        </footer>
+
+        {% comment %} {{title}}
+
+        {% for name in texts %}
+            {{name}}
+            {% if not forloop.last %}
+                
+            {% endif %}
+        {% endfor %} {% endcomment %}
+    </body>
+</html>
