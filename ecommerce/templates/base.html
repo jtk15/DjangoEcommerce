@@ -8,9 +8,9 @@
         <header>
             <h4>Django E-commerce</h4>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/category">Categoriaria</a></li>
-                <li><a href="/contact">Contato</a></li>
+                <li><a href={% url 'start' %}>Inicio</a></li>
+                <li><a href={% url 'category' %}>Categoriaria</a></li>
+                <li><a href={% url 'contact' %}>Contato</a></li>
             </ul>
         </header>
         <section> 
@@ -22,10 +22,10 @@
         </section>
         <footer>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/product">produto</a></li>
-                <li><a href="/contact">Contato</a></li>
-                <li><a href="/privacy">privacidade</a></li>
+                <li><a href={% url 'start' %}>Inicio</a></li>
+                <li><a href={% url 'product' %}>produto</a></li>
+                <li><a href={% url 'contact' %}>Contato</a></li>
+                <li><a href={% url 'privacy' %}>privacidade</a></li>
             </ul>
         </footer>
 

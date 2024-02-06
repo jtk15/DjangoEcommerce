@@ -5,9 +5,9 @@ from ecommerce.views import index, contact, category, privacy, product
 
 
 urlpatterns = [
-    path('', index),
-    path('contact/', contact),
-    path('category/', category),
-    path('privacy/', privacy),
-    path('product/', product),
+    path('inicio', index, name='start'),
+    path('contato', contact, name='contact'),
+    path('categoria', category, name='category'),
+    path('privacidade', privacy, name='privacy'),
+    path('produto', product, name='product'),
 ]
