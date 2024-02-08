@@ -9,7 +9,14 @@
             <h4>Django E-commerce</h4>
             <ul>
                 <li><a href={% url 'start' %}>Inicio</a></li>
-                <li><a href={% url 'category' %}>Categoriaria</a></li>
+                <li>
+                    <a href={% url 'category' %}>Categoriaria</a>
+                    <div class="menu-dropdown">
+                        {% for category in categories %}
+                            <a href="" >{{category}}</a>
+                        {% endfor %}
+                    </div>
+                </li>
                 <li><a href={% url 'contact' %}>Contato</a></li>
             </ul>
         </header>
