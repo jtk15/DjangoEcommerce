@@ -168,3 +168,22 @@ section h1 {
    visibility: visible;
 }
 
+
+/*######################################*/
+
+.container-product-main {
+    width:1250px;
+    height: auto;
+    margin:auto;
+    background-color: red;
+    
+}
+
+.container-product {
+    width:300px;
+    height:300px;
+    background-color: aqua;
+    float: left;
+    margin:0 0 10px 10px;
+}
+

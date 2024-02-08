@@ -4,5 +4,11 @@
 {% endblock %}
 
 {% block container %}
-    Página de produto em costrução
+    <div class="container-product-main">
+        {% for product in products%}
+            <div class="container-product">
+                {{product}}
+            </div>
+        {%endfor%}
+    </div>
 {% endblock %}
