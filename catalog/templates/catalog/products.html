@@ -1,17 +1,19 @@
-{% extends 'base.html' %}
+{% extends 'base.html'%}
 {% block title%}
-    catego | {{block.super}}
+    Produtos | {{block.super}}
 {% endblock %}
 
 {% block container %}
     <div class="container-product-main">
         {% for product in products%}
+            <a href={% url 'one-product-list' product.slug %}>
             <div class="container-product">
                 <h1>{{product.name}}</h1>
     
                 <button class="btn btn-container-product">Comprar</button>
                 <button class="btn btn-container-product">Detalhes</button>
             </div>
+            </a>
         {%endfor%}
     </div>
 {% endblock %}

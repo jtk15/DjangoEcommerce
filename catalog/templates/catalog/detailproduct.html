@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title%}
+    {{product.name}} | {{block.super}}
+{% endblock %}
+
+{% block container %}
+    <div class="container-product-main">
+    
+        <div class="container-product">
+            <h1>{{product.name}}</h1>
+
+            <button class="btn btn-container-product">Comprar</button>
+            <button class="btn btn-container-product">Detalhes</button>
+        </div>
+       
+    </div>
+{% endblock %}
