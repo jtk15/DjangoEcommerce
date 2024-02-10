@@ -13,7 +13,7 @@
                     <a href={% url 'category' %}>Categoriaria</a>
                     <div class="menu-dropdown">
                         {% for category in categories %}
-                            <a href="" >{{category}}</a>
+                            <a href={% url 'category' category.slug %} >{{category}}</a>
                         {% endfor %}
                     </div>
                 </li>
