@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from catalog.models import Category
 
-# Create your views here.
+from ecommerce.forms import ContactForms
 
 
 def index(request):
@@ -17,7 +17,13 @@ def index(request):
 
 def contact(request):
     
-    return render(request, 'contact.html')
+    form = ContactForms()
+    
+    context = {
+        'form': form
+    }
+    
+    return render(request, 'contact.html', context)
 
 def category(request):
     

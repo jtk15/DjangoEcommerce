@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
+
 {% block title%}
    Contato | {{block.super}}
 {% endblock %} 
 
 {% block container %}
 <h1>Entre em Contato</h1>
+<form class="form-contact">
+    {% render_field  form %}
+
+</form>
+
+
+
+
+
+{% comment %} 
+
 
 <form class="form-contact">
     <label>Nome</label></label><input type="email" name="" placeholder="">
@@ -13,6 +26,6 @@
     <textarea >Mensagem
     </textarea>
     <button>Enviar</button>
-</form>                   
+</form>                    {% endcomment %}
 {% endblock %}
  
